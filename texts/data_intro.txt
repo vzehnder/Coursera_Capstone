@@ -1,0 +1,8 @@
+The data is about collisions in Seattle, provided by the SDTO. It contains around 200,000 samples, with 37 different characteristics from the crashes. The idea of this project is to train a machine learning model to be able to predict the severity of the crashes, that have value 1(property damage) or 2(injury damage). So it will be a 
+binary classification model. There are a lot of missing values, around 40% of the samples have at least one NaN value. But many characteristics probably don't affect the outcome of the model, so before doing something about the missing values is better to remove the columns that are not relevant. The variables that will be included in the model will be
+- If the driver was under alcohol or drugs
+- Collision type
+- Weather conditions
+- The light conditions
+- The condition of the road
+After removing all the other variables there are only 3% of the samples with missing values, so those can be removed with no problem. So then the data needs to have further processing, for the training and testing of the model.   
